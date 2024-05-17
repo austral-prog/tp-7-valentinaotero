@@ -1,6 +1,20 @@
 def enumerate_list(list):
-    return list
+    result = []
+    index = 0
+    for string in list:
+        if string:
+            result.append (f"{index}. {string}")
+            index +=1
+    return result
 
 
-def enumerate_backwards(list):
-    return list
+print(enumerate_list(["Red", "Green", "", "White", "Black"]))
+
+
+
+
+
+
+
+
+
