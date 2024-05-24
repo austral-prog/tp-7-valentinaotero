@@ -1,13 +1,12 @@
 def enumerate_list(list):
-    result = []
+    new_list = []
     index = 0
     for string in list:
-        if string:
-            result.append (f"{index}. {string}")
+        if string != "":
+            new_element = f"{index}. {string}"
+            new_list.append(new_element)
             index +=1
-    return result
-
-
+    return new_list
 
 
 def enumerate_backwards(list):
@@ -15,14 +14,10 @@ def enumerate_backwards(list):
     index = 0
     for string in list:
         if string:
-            result.append (f"{index}. {string[ : :-1]}")
+            new_element = f"{index}. {string[ : :-1]}"
+            result.append (new_element)
             index +=1
     return result
-
-
-
-
-
 
 
 
