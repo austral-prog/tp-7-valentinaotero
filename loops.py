@@ -17,6 +17,8 @@ def index_of_empty(list):
             return counting
         counting += 1
     return -1
+
+
 def index_of(word, list):
     counting = 0
     while counting < len(list):
@@ -42,7 +44,7 @@ def remove(word, list):
         if list [index] == word:
             list [index] = ""
             deleted_words += 1
-    return -1
+    return deleted_words
 
 
 
